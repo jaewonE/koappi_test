@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/KOPPI_landing_page/static/css/main.fd6a1275.chunk.css",
+    "main.js": "/KOPPI_landing_page/static/js/main.73a755de.chunk.js",
+    "main.js.map": "/KOPPI_landing_page/static/js/main.73a755de.chunk.js.map",
+    "runtime-main.js": "/KOPPI_landing_page/static/js/runtime-main.4911d8c1.js",
+    "runtime-main.js.map": "/KOPPI_landing_page/static/js/runtime-main.4911d8c1.js.map",
+    "static/js/2.de7e885c.chunk.js": "/KOPPI_landing_page/static/js/2.de7e885c.chunk.js",
+    "static/js/2.de7e885c.chunk.js.map": "/KOPPI_landing_page/static/js/2.de7e885c.chunk.js.map",
+    "index.html": "/KOPPI_landing_page/index.html",
+    "static/css/main.fd6a1275.chunk.css.map": "/KOPPI_landing_page/static/css/main.fd6a1275.chunk.css.map",
+    "static/js/2.de7e885c.chunk.js.LICENSE.txt": "/KOPPI_landing_page/static/js/2.de7e885c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4911d8c1.js",
+    "static/js/2.de7e885c.chunk.js",
+    "static/css/main.fd6a1275.chunk.css",
+    "static/js/main.73a755de.chunk.js"
+  ]
+}
