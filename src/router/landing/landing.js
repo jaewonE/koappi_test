@@ -1,8 +1,9 @@
+import { addLandingMessage } from 'components/firebase/fIndex';
 import React, { useState } from 'react';
 
 const Landing = () => {
   const [isChecked, setChecked] = useState(false);
-  const submitLanding = (e) => {
+  const submitLanding = async (e) => {
     e.preventDefault();
     const { target } = e;
     const name = target[0].value;
@@ -14,7 +15,12 @@ const Landing = () => {
       message,
       getInterview: isChecked,
     };
-    console.log(landingObj);
+    const error = await addLandingMessage(landingObj);
+    if (error) {
+      console.error(error);
+    } else {
+      alert('Registered successfully');
+    }
   };
   return (
     <React.Fragment>

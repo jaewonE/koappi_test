@@ -12,8 +12,7 @@ const usePermission = () => {
   const [isLicensed, setIsLicensed] = useState(false);
   useEffect(() => {
     const permission = localStorage.getItem('isPermission');
-    console.log(Boolean(permission));
-    if (permission) {
+    if (Boolean(permission)) {
       setIsLicensed(true);
     }
   }, []);
