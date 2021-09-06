@@ -27,3 +27,5 @@ yarn-error.log*
 /src/components/firebase
 askPermission
 ./src/fbase.js
+fbase.js
+fbase

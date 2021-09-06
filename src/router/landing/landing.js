@@ -39,7 +39,7 @@ const Landing = () => {
             </p>
             <div className="title">Contact Info</div>
             <p>Team KOAPPI | CEO : Hyun Lee</p>
-            <p>E-mail: superihyun@naver.com</p>
+            <p>E-mail: funtripu@gmail.com</p>
           </div>
           <form className="form-wrapper" onSubmit={submitLanding}>
             <div className="enter-userInfo">
