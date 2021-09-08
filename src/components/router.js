@@ -7,6 +7,7 @@ import {
   Switch,
 } from 'react-router-dom';
 import Landing from 'router/landing/landing';
+import pageNotFound from 'router/pageNotFound/pageNotFound';
 
 const usePermission = () => {
   const [isLicensed, setIsLicensed] = useState(false);
@@ -29,9 +30,8 @@ const AppRouter = () => {
             <Route exact path="/">
               <Redirect to="/landing" />
             </Route>
-            <Route exact path="/landing">
-              <Landing />
-            </Route>
+            <Route exact path="/landing" component={Landing} />
+            <Route path="*" component={pageNotFound} />
           </Switch>
         </Router>
       ) : (

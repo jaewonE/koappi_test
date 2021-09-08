@@ -1,0 +1,122 @@
+.noPage-container {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1efec;
+}
+.noPage-wrapper {
+  min-width: 430px;
+  min-height: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.noPage-wrapper .logo-box {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 90px;
+}
+.noPage-wrapper .img-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 90px;
+  height: 100%;
+}
+.noPage-wrapper .img-box img {
+  position: relative;
+  top: 25px;
+  left: 15px;
+  object-fit: cover;
+  width: 65px;
+  height: 65px;
+}
+.noPage-wrapper .text-box {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 90px);
+}
+.noPage-wrapper .errorCode-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.noPage-wrapper .errorCode-box span {
+  font-size: 110px;
+  font-weight: 700;
+  color: #8064a2;
+  position: relative;
+  right: 50px;
+  top: -5px;
+}
+.noPage-wrapper .logoText-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.noPage-wrapper .logoText-box span {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #8064a2;
+  position: relative;
+  left: 25px;
+}
+.noPage-wrapper .warning-message {
+  width: 100%;
+  font-size: 35px;
+  font-weight: 700;
+  color: #8064a2;
+  text-align: center;
+}
+.noPage-wrapper .goback-wrapper {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.noPage-wrapper .goback-btn {
+  border: none;
+  width: 90%;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #8064a2;
+  opacity: 0.7;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.noPage-wrapper .goback-btn:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 500px) {
+  .noPage-wrapper {
+    transform: scale(0.8, 0.8);
+  }
+}
+@media screen and (max-width: 400px) {
+  .noPage-wrapper {
+    transform: scale(0.6, 0.6);
+  }
+}
+@media screen and (max-width: 300px) {
+  .noPage-wrapper {
+    transform: scale(0.4, 0.4);
+  }
+}
