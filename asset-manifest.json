@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/koappi_test/static/css/main.fd6a1275.chunk.css",
-    "main.js": "/koappi_test/static/js/main.95404ef7.chunk.js",
-    "main.js.map": "/koappi_test/static/js/main.95404ef7.chunk.js.map",
+    "main.css": "/koappi_test/static/css/main.49bf61fd.chunk.css",
+    "main.js": "/koappi_test/static/js/main.ff3545cc.chunk.js",
+    "main.js.map": "/koappi_test/static/js/main.ff3545cc.chunk.js.map",
     "runtime-main.js": "/koappi_test/static/js/runtime-main.14511da3.js",
     "runtime-main.js.map": "/koappi_test/static/js/runtime-main.14511da3.js.map",
-    "static/js/2.a9dfde52.chunk.js": "/koappi_test/static/js/2.a9dfde52.chunk.js",
-    "static/js/2.a9dfde52.chunk.js.map": "/koappi_test/static/js/2.a9dfde52.chunk.js.map",
+    "static/js/2.7b564a5b.chunk.js": "/koappi_test/static/js/2.7b564a5b.chunk.js",
+    "static/js/2.7b564a5b.chunk.js.map": "/koappi_test/static/js/2.7b564a5b.chunk.js.map",
     "index.html": "/koappi_test/index.html",
-    "static/css/main.fd6a1275.chunk.css.map": "/koappi_test/static/css/main.fd6a1275.chunk.css.map",
-    "static/js/2.a9dfde52.chunk.js.LICENSE.txt": "/koappi_test/static/js/2.a9dfde52.chunk.js.LICENSE.txt"
+    "static/css/main.49bf61fd.chunk.css.map": "/koappi_test/static/css/main.49bf61fd.chunk.css.map",
+    "static/js/2.7b564a5b.chunk.js.LICENSE.txt": "/koappi_test/static/js/2.7b564a5b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.14511da3.js",
-    "static/js/2.a9dfde52.chunk.js",
-    "static/css/main.fd6a1275.chunk.css",
-    "static/js/main.95404ef7.chunk.js"
+    "static/js/2.7b564a5b.chunk.js",
+    "static/css/main.49bf61fd.chunk.css",
+    "static/js/main.ff3545cc.chunk.js"
   ]
 }
