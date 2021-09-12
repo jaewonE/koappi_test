@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from 'images/landing/logo.png';
 
 const pageNotFound = () => {
   const goHome = () => {
@@ -10,7 +11,7 @@ const pageNotFound = () => {
       <div className="noPage-wrapper">
         <div className="logo-box">
           <div className="img-box">
-            <img alt="logo" src="https://tripu.fun/assets/img/favicon.png" />
+            <img alt="logo" src={logo} />
           </div>
           <div className="text-box">
             <div className="errorCode-box">

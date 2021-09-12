@@ -1,0 +1,41 @@
+.landingSuccess-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landingSuccess-wrapper {
+  width: 80%;
+  height: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.landingSuccess-wrapper img {
+  width: 50%;
+  height: 50%;
+  max-width: 220px;
+  max-height: 220px;
+  min-width: 50px;
+  min-height: 50px;
+  object-fit: contain;
+  margin-bottom: 40px;
+}
+.landingSuccess-wrapper h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  color: #785a9d;
+}
+.landingSuccess-wrapper p {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 400;
+  width: 80%;
+  text-align: center;
+  margin-top: 10px;
+}
