@@ -34,6 +34,17 @@
   background: rgb(252, 251, 255);
   padding: 30px;
 }
+@media screen and (max-width: 400px) {
+  .submitLanding-wrapper .info-wrapper,
+  .submitLanding-wrapper .form-wrapper {
+    width: 47%;
+    min-width: 300px;
+    margin: 12px;
+    color: #444444;
+    background: rgb(252, 251, 255);
+    padding: 30px;
+  }
+}
 .submitLanding-wrapper .info-wrapper .title {
   font-size: 20px;
   color: #012970;

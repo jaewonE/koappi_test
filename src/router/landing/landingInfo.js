@@ -67,7 +67,7 @@ const LandingInfo = () => {
             alt="logo"
             src={logo}
             data-aos="fade-up"
-            data-aos-offset="500"
+            data-aos-offset="300"
             data-aos-duration="200"
             data-aos-easing="ease-out-quad"
           />
@@ -156,7 +156,7 @@ const LandingInfo = () => {
             <p>native Korean residents who know their region well.</p>
           </div>
         </div>
-        <div className="landing_introduce-wrapper landing-fullsize">
+        <div className="p4 landing_introduce-wrapper landing-fullsize">
           <p>
             <span>TripU</span> will do all the anoying tasks of preparation
             stage!
