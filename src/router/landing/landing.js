@@ -10,9 +10,6 @@ const Landing = () => {
   const [language, setLanguage] = useState(null);
   const [submitDone, setSubmitDone] = useState(false);
   useEffect(() => {
-    console.log(language);
-  }, [language]);
-  useEffect(() => {
     AOS.init();
   }, []);
 

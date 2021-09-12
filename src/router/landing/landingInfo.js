@@ -102,7 +102,7 @@ const LandingInfo = () => {
           </p>
         </div>
         <div className="landing_introduce-wrapper landing-fullsize">
-          <h3>Than,</h3>
+          <h3 className="p3-h3">Than,</h3>
           <div className="pin_image-wrapper">
             <img className="land" alt="land_img" src={korea} />
             <img
@@ -116,7 +116,7 @@ const LandingInfo = () => {
             />
             <img
               data-aos="zoom-in-down"
-              data-aos-offset="270"
+              data-aos-offset="260"
               data-aos-duration="300"
               data-aos-easing="ease-out-quad"
               className="pin"
@@ -125,7 +125,7 @@ const LandingInfo = () => {
             />
             <img
               data-aos="zoom-in-down"
-              data-aos-offset="275"
+              data-aos-offset="220"
               data-aos-duration="300"
               data-aos-easing="ease-out-quad"
               className="pin"
@@ -141,6 +141,15 @@ const LandingInfo = () => {
               alt="pin"
               src={pin}
             />
+            <img
+              data-aos="zoom-in-down"
+              data-aos-offset="150"
+              data-aos-duration="300"
+              data-aos-easing="ease-out-quad"
+              className="pin"
+              alt="pin"
+              src={pin}
+            />
           </div>
           <p>
             <span>Utriper</span> will make your own customized itinerary!
@@ -148,7 +157,7 @@ const LandingInfo = () => {
           <div
             className="utriper-info"
             data-aos="fade-up"
-            data-aos-offset="50"
+            data-aos-offset="0"
             data-aos-duration="600"
             data-aos-easing="ease-in-out-quad"
           >
