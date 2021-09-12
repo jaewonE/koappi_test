@@ -16,11 +16,12 @@
   font-size: 2.2rem;
   font-weight: 400;
   text-align: center;
-  margin: 10px;
+  margin: 10px 0px;
   line-height: 1.3;
 }
 .landing_question-wrapper p + p {
-  margin: 0px 20px;
+  margin: 0px;
+  line-height: 1;
 }
 .landing_question-container .q1 {
   background-color: #8064a2;
@@ -45,38 +46,7 @@
   font-size: 3rem;
   color: #8064a2;
 }
-@media screen and (max-width: 600px) {
-  .landing_question-wrapper h1 {
-    font-size: 5rem;
-    font-weight: 700;
-    margin: 10px;
-  }
-  .landing_question-wrapper p {
-    font-size: 1.6rem;
-    font-weight: 400;
-    text-align: center;
-    margin: 10px;
-    line-height: 1.3;
-  }
-  .landing_introduce-wrapper h3 {
-    font-size: 3.4rem;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    text-align: center;
-  }
-  .landing_introduce-wrapper p {
-    margin: 10px 30px;
-    text-align: center;
-    font-size: 1.7rem;
-    font-weight: 700;
-    line-height: 1.3;
-  }
-  .landing_introduce-wrapper p span {
-    font-size: 2.7rem;
-    color: #8064a2;
-  }
-}
+
 .landing_introduce-wrapper .logo {
   width: 70px;
   height: 70px;
@@ -92,20 +62,18 @@
 .mockImg-wrapper {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   width: calc(100% - 60px);
   max-width: 1100px;
-  max-height: 750px;
+  max-height: 318px;
+  height: 70vw;
   margin: 30px;
   overflow: hidden;
 }
 .mockImg-wrapper img {
-  margin: 10px;
-  width: 35%;
   object-fit: contain;
-}
-.mockImg-wrapper img:nth-child(1) {
-  position: relative;
-  top: 10px;
+  height: 100%;
+  margin: 0px 10px;
 }
 .mockImg-wrapper img:nth-child(2) {
   position: relative;
@@ -120,26 +88,15 @@
   max-width: 700px;
   max-height: 700px;
   position: relative;
-  margin-top: 20px;
   margin-bottom: 50px;
-}
-@media screen and (max-width: 500px) {
-  .pin_image-wrapper {
-    width: 100vw;
-    height: 100vw;
-    min-width: 100vw;
-    min-height: 100vw;
-    max-width: 700px;
-    max-height: 700px;
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pin_image-wrapper .land {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   object-fit: contain;
   z-index: -1;
 }
@@ -173,7 +130,94 @@
   top: 79%;
   left: 25%;
 }
+.landing_introduce-wrapper .utriper-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 60px;
+}
+.landing_introduce-wrapper .utriper-info h4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.landing_introduce-wrapper .utriper-info p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px;
+  line-height: 1.3;
+}
+.landing_introduce-wrapper .landing-airplaneImg {
+  width: 70vw;
+  height: 70vw;
+  max-width: 500px;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 600px) {
+  .landing_question-wrapper h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  .landing_question-wrapper p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    width: 80%;
+    line-height: 1.3;
+  }
+  .landing_introduce-wrapper h3 {
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .landing_introduce-wrapper p {
+    margin: 10px 30px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+    width: 70%;
+  }
+  .landing_introduce-wrapper p span {
+    font-size: 2.7rem;
+    color: #8064a2;
+  }
+  .landing_introduce-wrapper .foreigner {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin: 40px 0px;
+    z-index: 1;
+  }
+  .mockImg-wrapper img {
+    object-fit: contain;
+    height: 50vw;
+    margin: 0px 5px;
+  }
+  .mockImg-wrapper img:nth-child(2) {
+    position: relative;
+    top: 80px;
+  }
+}
 @media screen and (max-width: 500px) {
+  .pin_image-wrapper {
+    width: 100vw;
+    height: 100vw;
+    min-width: 100vw;
+    min-height: 100vw;
+    max-width: 700px;
+    max-height: 700px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
   .pin_image-wrapper .pin {
     position: absolute;
     top: 0px;
@@ -207,29 +251,4 @@
   .p4 {
     margin-top: 50px;
   }
-}
-.landing_introduce-wrapper .utriper-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 60px;
-}
-.landing_introduce-wrapper .utriper-info h4 {
-  font-size: 2rem;
-  font-weight: 500;
-}
-.landing_introduce-wrapper .utriper-info p {
-  font-size: 1.2rem;
-  font-weight: 400;
-  text-align: center;
-  margin: 10px;
-  line-height: 1.3;
-}
-.landing_introduce-wrapper .landing-airplaneImg {
-  width: 70vw;
-  height: 70vw;
-  max-width: 500px;
-  max-height: 500px;
-  object-fit: contain;
 }

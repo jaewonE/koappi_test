@@ -3,7 +3,7 @@ import React from 'react';
 import logo from 'images/landing/logo.png';
 import foreigner from 'images/landing/foreigner.png';
 import mockUp1 from 'images/landing/mock-up-1.png';
-import mockUp2 from 'images/landing/mock-up-2.png';
+import mockUp2 from 'images/landing/mock-up-2-full.png';
 import korea from 'images/landing/korea.png';
 import pin from 'images/landing/pin_b.png';
 import airplane from 'images/landing/airplane.png';
@@ -68,7 +68,7 @@ const LandingInfo = () => {
             src={logo}
             data-aos="fade-up"
             data-aos-offset="300"
-            data-aos-duration="200"
+            data-aos-duration="600"
             data-aos-easing="ease-out-quad"
           />
           <img className="foreigner" alt="img" src={foreigner} />
