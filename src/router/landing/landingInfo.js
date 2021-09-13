@@ -37,7 +37,7 @@ const LandingInfo = () => {
             data-aos-easing="ease-in-out-quad"
             data-aos-delay="400"
           >
-            while making a itinerary?
+            while making an itinerary?
           </p>
         </div>
         <div className="landing_question-wrapper q2 landing-fullsize">
@@ -73,7 +73,7 @@ const LandingInfo = () => {
           />
           <img className="foreigner" alt="img" src={foreigner} />
           <p>
-            just request your own trip to{' '}
+            just request your own trip on{' '}
             <span className="p_emphasize">TripU </span>!
           </p>
         </div>
@@ -98,11 +98,11 @@ const LandingInfo = () => {
             />
           </div>
           <p>
-            and also <span>conveniently</span>.
+            and also <span>convenient</span>.
           </p>
         </div>
         <div className="landing_introduce-wrapper landing-fullsize">
-          <h3 className="p3-h3">Than,</h3>
+          <h3 className="p3-h3">Then,</h3>
           <div className="pin_image-wrapper">
             <img className="land" alt="land_img" src={korea} />
             <img
@@ -179,7 +179,7 @@ const LandingInfo = () => {
             data-aos-duration="600"
             data-aos-easing="ease-out-quad"
           />
-          <p>You’re gonna Just Enjoy!</p>
+          <p>You can Just Enjoy!</p>
         </div>
       </div>
     </React.Fragment>

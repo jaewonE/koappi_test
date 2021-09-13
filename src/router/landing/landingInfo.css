@@ -99,6 +99,7 @@
 .pin_image-wrapper .land {
   width: 80%;
   height: 80%;
+  max-width: 700px;
   object-fit: contain;
   z-index: -1;
 }
@@ -182,8 +183,8 @@
 .landing_introduce-wrapper .landing-airplaneImg {
   width: 37vw;
   height: 37vw;
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 250px;
+  max-height: 250px;
   object-fit: contain;
   margin: 20px;
 }
