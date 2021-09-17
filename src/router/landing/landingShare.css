@@ -1,0 +1,93 @@
+.landingShare-wrapper {
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-top: 60px;
+  width: 100%;
+  max-width: 250px;
+  min-height: 50px;
+}
+.landingShare-wrapper .social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  opacity: 0.6;
+}
+.landingShare-wrapper .social-icon:hover {
+  opacity: 1;
+}
+.landingShare-wrapper .social-icon i {
+  position: relative;
+}
+.landingShare-wrapper .social-icon:hover .name {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -150%);
+}
+.landingShare-wrapper .social-icon:active {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+}
+.landingShare-wrapper .social-icon--copy {
+  background-color: #2b97f1;
+  color: #fff;
+}
+.landingShare-wrapper .social-icon--copy .name {
+  background-color: #2b97f1;
+  color: #3a1d1d;
+}
+.landingShare-wrapper .social-icon--kakaoTalk,
+.landingShare-wrapper .social-icon--kakaoTalk .name {
+  background-color: #f7e600;
+  color: #3a1d1d;
+}
+.landingShare-wrapper .social-icon input {
+  position: absolute;
+  pointer-events: none;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+
+.landingShare-wrapper .name {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 10px 15px;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transform: translate(-50%, -100%);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+@media screen and (max-width: 500px) {
+  .landingShare-wrapper {
+    margin-top: 80px;
+  }
+  .landingShare-wrapper .name {
+    top: 5px;
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -150%);
+  }
+  .landingShare-wrapper .social-icon {
+    opacity: 1;
+  }
+}
