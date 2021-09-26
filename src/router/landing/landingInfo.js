@@ -7,8 +7,21 @@ import mockUp2 from 'images/landing/mock-up-2-full.png';
 import korea from 'images/landing/korea.png';
 import pin from 'images/landing/pin_b.png';
 import airplane from 'images/landing/airplane.png';
+import { useTranslation } from 'react-i18next';
 
-const LandingInfo = () => {
+const LandingInfo = ({ language }) => {
+  const { t, i18n } = useTranslation();
+
+  switch (language) {
+    case 'english':
+      i18n.changeLanguage('en');
+      break;
+    case 'chinese':
+      i18n.changeLanguage('cn');
+      break;
+    default:
+  }
+
   return (
     <React.Fragment>
       <div className="landing_question-container">
@@ -19,7 +32,7 @@ const LandingInfo = () => {
             data-aos-duration="400"
             data-aos-easing="ease-in-out-quad"
           >
-            Hello!
+            {t('welcome')}
           </h1>
           <p
             data-aos="fade-up"
@@ -28,16 +41,7 @@ const LandingInfo = () => {
             data-aos-easing="ease-in-out-quad"
             data-aos-delay="400"
           >
-            Have you ever experienced any inconvenience
-          </p>
-          <p
-            data-aos="fade-up"
-            data-aos-offset="0"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out-quad"
-            data-aos-delay="400"
-          >
-            while making an itinerary?
+            {t('intro1')}
           </p>
         </div>
         <div className="landing_question-wrapper q2 landing-fullsize">
@@ -47,7 +51,7 @@ const LandingInfo = () => {
             data-aos-duration="400"
             data-aos-easing="ease-in-out-quad"
           >
-            Or,
+            {t('intro2')}
           </h1>
           <p
             data-aos="fade-right"
@@ -55,13 +59,13 @@ const LandingInfo = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out-quad"
           >
-            Are you tired of common Trip on internet?
+            {t('intro3')}
           </p>
         </div>
       </div>
       <div className="landing_introduce-container">
         <div className="landing_introduce-wrapper landing-fullsize">
-          <h3>Now,</h3>
+          <h3> {t('solution1')} </h3>
           <img
             className="logo"
             alt="logo"
@@ -73,12 +77,13 @@ const LandingInfo = () => {
           />
           <img className="foreigner" alt="img" src={foreigner} />
           <p>
-            just request your own trip on{' '}
-            <span className="p_emphasize">TripU </span>!
+            {t('solution2')}
+            <span className="p_emphasize">TripU</span>
+            {t('solution3')}
           </p>
         </div>
         <div className="landing_introduce-wrapper landing-fullsize">
-          <h3>Easy,</h3>
+          <h3> {t('describe1')} </h3>
           <div className="mockImg-wrapper">
             <img
               alt="mockImg1"
@@ -98,11 +103,11 @@ const LandingInfo = () => {
             />
           </div>
           <p>
-            and also <span>convenient</span>.
+            {t('describe2')} <span> {t('describe3')} </span>.
           </p>
         </div>
         <div className="landing_introduce-wrapper landing-fullsize">
-          <h3 className="p3-h3">Then,</h3>
+          <h3 className="p3-h3"> {t('then')} </h3>
           <div className="pin_image-wrapper">
             <img className="land" alt="land_img" src={korea} />
             <img
@@ -152,7 +157,7 @@ const LandingInfo = () => {
             />
           </div>
           <p>
-            <span>Utriper</span> will make your own customized itinerary!
+            <span> {t('utripper1')} </span> {t('utripper2')}
           </p>
           <div
             className="utriper-info"
@@ -161,14 +166,13 @@ const LandingInfo = () => {
             data-aos-duration="600"
             data-aos-easing="ease-in-out-quad"
           >
-            <h4>Who is Utriper?</h4>
-            <p>native Korean residents who know their region well.</p>
+            <h4> {t('utripper3')} </h4>
+            <p> {t('utripper4')} </p>
           </div>
         </div>
         <div className="p4 landing_introduce-wrapper landing-fullsize">
           <p>
-            <span>TripU</span> will do all the anoying tasks of preparation
-            stage!
+            <span>TripU</span> {t('summary1')}
           </p>
           <img
             className="landing-airplaneImg"
@@ -179,7 +183,7 @@ const LandingInfo = () => {
             data-aos-duration="600"
             data-aos-easing="ease-out-quad"
           />
-          <p>You can Just Enjoy!</p>
+          <p> {t('summary2')} </p>
         </div>
       </div>
     </React.Fragment>

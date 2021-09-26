@@ -1,0 +1,36 @@
+{
+    "welcome": "你好！",
+    "intro1": "你在制定旅行计划的时候有不方便的地方吗？",
+    "intro2": "或者,",
+    "intro3": "在网上看的一般旅行不觉得无聊吗？",
+    "solution1": "那么,",
+    "solution2": "在",
+    "solution3": "上面可以帮你制定旅行！",
+    "describe1": "TripU使用非常简单,",
+    "describe2": "而且",
+    "describe3": "很方便",
+    "then": "然后,",
+    "utripper1": "Utrippers",
+    "utripper2": "会制定你的旅行计划！",
+    "utripper3": "Utrippers？",
+    "utripper4": "他们是当地韩国侨民！！",
+    "summary1": "将解决所有麻烦的过程！",
+    "summary2": "您就放心的玩吧！",
+
+    "submitTitle": "快点体验TripU吧！",
+    "submit1": "第一次体验TripU的机会",
+    "submit2": "请留下您的联系方式，",
+    "submit3": "那么我们会尽快与您联系！",
+    "submit4": "为了今后的产品开发，KOAPPI团队可以委托采访，敬请谅解。",
+    "submit5": "联系方式",
+
+    "name": "姓名",
+    "email": "电子邮件地址",
+    "message":"请留言",
+    "interviewCheck": "为了今后的产品开发，我想接受采访。",
+    "messageSubmit": "留话",
+
+    "landingSuccess1": "谢谢你的关心！",
+    "landingSuccess2": "我会尽快联系你的！希望在韩国见到你，我们会创造属于你的幸福！",
+    "landingSuccessBack": "返回主页"
+}

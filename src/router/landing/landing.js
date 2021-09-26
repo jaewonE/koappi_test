@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 import SelectLangPage from 'router/landing/selectLangPage';
 import SubmitLandingPage from 'router/landing/SubmitLandingPage';
 import LandingInfo from 'router/landing/landingInfo';
-import LandingSuccess from './landingSuccess';
+import LandingSuccess from 'router/landing/landingSuccess';
 
 const Landing = () => {
   const [language, setLanguage] = useState(null);
@@ -16,13 +16,16 @@ const Landing = () => {
   return (
     <React.Fragment>
       {submitDone ? (
-        <LandingSuccess />
+        <LandingSuccess language={language} />
       ) : (
         <React.Fragment>
           {language ? (
             <div className="landing-container">
-              <LandingInfo />
-              <SubmitLandingPage setSubmitDone={setSubmitDone} />
+              <LandingInfo language={language} />
+              <SubmitLandingPage
+                setSubmitDone={setSubmitDone}
+                language={language}
+              />
             </div>
           ) : (
             <SelectLangPage setLanguage={setLanguage} />

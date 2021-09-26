@@ -1,0 +1,36 @@
+{
+    "welcome": "Bonjour!",
+    "intro1": " Have you ever experienced any inconvenience\nwhile making an itinerary?",
+    "intro2": "Or,",
+    "intro3": "Are you tired of common Trips on the Internet?",
+    "solution1": "Now,",
+    "solution2": "just request your own trip on ",
+    "solution3": " !",
+    "describe1": "Easy,",
+    "describe2": "and also",
+    "describe3": "convenient",
+    "then": "Then,",
+    "utripper1": "Utrippers",
+    "utripper2": "will make your own customized itinerary!",
+    "utripper3": "Who are Utrippers?",
+    "utripper4": "Native Korean residents who know their regions well.",
+    "summary1": "will do all the anoying tasks of preparation stage!",
+    "summary2": "You can Just Enjoy!",
+
+    "submitTitle": "Experience TripU Faster than Anyone Else!",
+    "submit1": "The first chance to experience TripU",
+    "submit2": "Please leave your contact information,",
+    "submit3": "and we will contact you as soon as TripU is released!",
+    "submit4": "Please note that Team KOAPPI can ask for an interview for future product development.",
+    "submit5": "Contact Info",
+
+    "name": "Name",
+    "email": "E-mail Address",
+    "message":"Message",
+    "interviewCheck": "I am willing to take an interview for future product development.",
+    "messageSubmit": "Leave Message",
+
+    "landingSuccess1": "Thank you for your interest !",
+    "landingSuccess2": "We will contact you as soon as possible! Hope to see you in Korea with your own happiness we’ll make !",
+    "landingSuccessBack": "Back to main page"
+}

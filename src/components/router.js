@@ -1,13 +1,13 @@
-import AskPermission from 'askPermission';
 import React, { useEffect, useState } from 'react';
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Redirect,
   Route,
   Switch,
 } from 'react-router-dom';
 import Landing from 'router/landing/landing';
 import pageNotFound from 'router/pageNotFound/pageNotFound';
+import AskPermission from 'askPermission';
 
 const usePermission = () => {
   const [isLicensed, setIsLicensed] = useState(false);
@@ -42,3 +42,17 @@ const AppRouter = () => {
 };
 
 export default AppRouter;
+
+{
+  /* <React.Fragment>
+<Router>
+  <Switch>
+    <Route exact path="/">
+      <Redirect to="/landing" />
+    </Route>
+    <Route exact path="/landing" component={Landing} />
+    <Route path="*" component={pageNotFound} />
+  </Switch>
+</Router>
+</React.Fragment> */
+}

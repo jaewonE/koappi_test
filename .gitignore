@@ -1,5 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 /.pnp
@@ -22,10 +20,19 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-#custom
+#firebase
 .env
+/src/components
 /src/components/firebase
-askPermission
+/src/components/firebase/fbase.js
 ./src/fbase.js
 fbase.js
-fbase
+firestore.rules
+storage.rules
+
+#package
+package.json
+package-lock.json
+
+#ECT
+askPermission

@@ -1,7 +1,21 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+
 import logo from 'images/landing/logo.png';
 
-const LandingSuccess = () => {
+const LandingSuccess = ({ language }) => {
+  const { t, i18n } = useTranslation();
+  switch (language) {
+    case 'english':
+      i18n.changeLanguage('en');
+      break;
+    case 'chinese':
+      i18n.changeLanguage('cn');
+      break;
+    default:
+  }
+
   return (
     <div className="landingSuccess-container">
       <div
@@ -12,12 +26,11 @@ const LandingSuccess = () => {
         data-aos-easing="ease-in-out-quad"
       >
         <img alt="logo" src={logo} />
-        <h3>Thank you for your interest !</h3>
-        <p>
-          We will contact you as soon as possible! Hope to see you in Korea with
-          your own happiness we’ll make !
-        </p>
-        <input type="button" value="Back to main page" />
+        <h3> {t('landingSuccess1')} </h3>
+        <p> {t('landingSuccess2')} </p>
+        <Link to="/" className="goback-btn">
+          <span> {t('landingSuccessBack')} </span>
+        </Link>
       </div>
     </div>
   );

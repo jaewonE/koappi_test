@@ -34,9 +34,9 @@ const useShare = () => {
       .query({ name: 'clipboard-write' })
       .then((permissions) => {
         if (permissions !== 'granted') {
-          copy('https://tripu.fun/#/landing');
+          copy('https://tripu.fun');
         } else {
-          const copy_url = String('https://tripu.fun/#/landing');
+          const copy_url = String('https://tripu.fun');
           navigator.clipboard.writeText(copy_url).then(
             () => {
               alert('copy');
@@ -50,14 +50,12 @@ const useShare = () => {
       });
   };
   const kakaoShare = () => {
-    const copy_url = 'https://tripu.fun/#/landing';
+    const copy_url = 'https://tripu.fun';
     try {
       if (window.Kakao) {
         const kakao = window.Kakao;
         if (!kakao.isInitialized()) {
-          kakao.init('c17e02c875b0ed1852e6c348cd7da81a'); //이거 .env로 넣어서 숨겨줘
-          //.env에 들어갈 것ㄱ  : 무조건 REACT_APP_으로 시작해야 함(리엑트 규칙)
-          // REACT_APP_KAKAO_API=c17e02c875b0ed1852e6c348cd7da81a
+          kakao.init(process.env.REACT_APP_KAKAO_API);
         }
         kakao.Link.sendDefault({
           objectType: 'feed',
