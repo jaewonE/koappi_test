@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { addLandingMessage } from 'components/firebase/fIndex';
+import { useTranslation } from 'react-i18next';
+import LandingShare from 'router/landing/landingShare';
 
-const SubmitLandingPage = ({ setSubmitDone }) => {
+const SubmitLandingPage = ({ setSubmitDone, language }) => {
   const [isChecked, setChecked] = useState(false);
 
   const submitLanding = async (e) => {
@@ -16,28 +18,25 @@ const SubmitLandingPage = ({ setSubmitDone }) => {
       message,
       getInterview: isChecked,
     };
-    //위 과정은 유저가 입력한 정보를 가져와 landingObj 라는 object형태로 만든 것.
-
     const error = await addLandingMessage(landingObj);
-    //해당 object를 firebase firestore에 저장한다.
-    //firebase.fireStore이 뭔지 모르겠으면 내일 전화줘.
-    //addLandingMessage는 내가 만든 함수로 components/firebase/fIndex 경로에 있어.
-    //addLandingMessage 함수는 landing 컬렉션 안에 messages 문서 안에 있는 리스트에 위 landingObj를 추가하는 함수야
-    //그렇다고 landing 컬렉션과 messages문서를 생성할 필요는 없어. 없을 경우 생성하는 기능이 두었어.
-    //에러 객체를 리턴하는데 에러가 없을 경우 null값을 return해. 그렇기에 아래와 같이 if문을 통해 error값이 있을 경우에 대해 상황을 설정 할 수 있어.
-    //return되는 형태는 promise이기 때문에 (위 코드와 같이) 사용할 때 반드시 await을 앞에 입력해주어야 되!
-
     if (error) {
-      console.error(error); //에러가 있을 경우 에러를 출력하고
+      console.error(error);
     } else {
       setSubmitDone(true);
-      // 에러가 없으면 setSubmitDone(true) 함수를 실행시켜 submitDone 변수의 값을 true로 변경한다.
-      //landing.js를 보면 삼항연산자로 submitDone 변수의 값이 true일 경우 landingSuccess 컴포넌트를, 그렇지 않을 경우 landingInfo 컴포넌트를 보여주게 되어있는데
-      //위의 addLandingMessage함수를 통해 firebase server에 유저의 정보를 저장하는 과정에 에러가 없을 경우 실행되는 setSubmitDone(true)를 통해
-      //submitDone의 값이 false에서 true로 변경되었기 때문에 landingSuccess 컴포넌트가 유저에게 보여진다.
-      //(submitDone의 초기값은 false이다. submitDone 변수를 선언할 때 useState(false)를 통해 초기값을 false로 주었기 때문.)
     }
   };
+
+  const { t, i18n } = useTranslation();
+  switch (language) {
+    case 'english':
+      i18n.changeLanguage('en');
+      break;
+    case 'chinese':
+      i18n.changeLanguage('cn');
+      break;
+    default:
+  }
+
   return (
     <React.Fragment>
       <div
@@ -48,18 +47,15 @@ const SubmitLandingPage = ({ setSubmitDone }) => {
         data-aos-easing="ease-in-out"
       >
         <div className="submitLanding-title">
-          <p>Experience TripU Faster than Anyone Else!</p>
+          <p> {t('submitTitle')} </p>
         </div>
         <div className="submitLanding-wrapper">
           <div className="info-wrapper">
-            <div className="title">The first chance to experience TripU</div>
-            <p>Please leave your contact information,</p>
-            <p>and we will contact you as soon as TripU is released!</p>
-            <p>
-              Please note that Team KOAPPI can ask for an interview for future
-              product development.
-            </p>
-            <div className="title">Contact Info</div>
+            <div className="title"> {t('submit1')} </div>
+            <p> {t('submit2')} </p>
+            <p> {t('submit3')} </p>
+            <p> {t('submit4')} </p>
+            <div className="title"> {t('submit5')} </div>
             <p>Team KOAPPI | CEO : Hyun Lee</p>
             <p>E-mail: funtripu@gmail.com</p>
           </div>
@@ -69,14 +65,14 @@ const SubmitLandingPage = ({ setSubmitDone }) => {
                 type="text"
                 className="form-control"
                 id="name"
-                placeholder="Name"
+                placeholder={t('name')}
                 required
               />
               <input
                 type="email"
                 className="form-control"
                 id="email"
-                placeholder="E-mail Address"
+                placeholder={t('email')}
                 required
               />
             </div>
@@ -85,8 +81,8 @@ const SubmitLandingPage = ({ setSubmitDone }) => {
                 className="form-control"
                 id="message"
                 rows="3"
-                placeholder="Message"
-                required
+                placeholder={t('message')}
+                //required
               ></textarea>
             </div>
             <div className="get-permission">
@@ -100,18 +96,30 @@ const SubmitLandingPage = ({ setSubmitDone }) => {
                 className="form-check-label"
                 htmlFor="landing-permisiion-btn"
               >
-                I am willing to take an interview for future product
-                development.
+                {t('interviewCheck')}
               </label>
             </div>
             <div className="submit-wrapper">
               <button type="submit" id="submitMessage">
-                Leave Message
+                {t('messageSubmit')}
               </button>
             </div>
           </form>
         </div>
       </div>
+      <div
+        className="landingShare-container"
+        data-aos="fade-in"
+        data-aos-offset="30"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <div className="landingShare-title">
+          <p> Share with Friends! </p>
+        </div>
+        <LandingShare />
+      </div>
+
       <footer className="landing_footer-wrapper">
         <div className="text-muted text-center">© 2021 KOAPPI.</div>
         <div className="text-muted text-center">

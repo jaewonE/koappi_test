@@ -43,8 +43,7 @@ const AppRouter = () => {
 
 export default AppRouter;
 
-{
-  /* <React.Fragment>
+/* <React.Fragment>
 <Router>
   <Switch>
     <Route exact path="/">
@@ -55,4 +54,3 @@ export default AppRouter;
   </Switch>
 </Router>
 </React.Fragment> */
-}

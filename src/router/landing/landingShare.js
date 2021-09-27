@@ -60,10 +60,9 @@ const useShare = () => {
         kakao.Link.sendDefault({
           objectType: 'feed',
           content: {
-            title: 'TripU : customized Korean travel platform',
-            description:
-              'we are preparing hard now! Cheer for our one dream here',
-            imageUrl: 'https://tripu.fun/static/media/logo.d34f1a49.png', //이거 너가 가진 이미지 주소로 수정
+            title: 'TripU : Customized Korean travel product platform',
+            description: 'We make whole new culture of Trip to Korea!',
+            imageUrl: 'https://tripu.fun/static/media/logo.d34f1a49.png',
             link: {
               mobileWebUrl: copy_url,
               webUrl: copy_url,
@@ -71,14 +70,14 @@ const useShare = () => {
               iosExecutionParams: copy_url,
             },
           },
-          social: {
-            likeCount: 254,
-            sharedCount: 333,
-            viewCount: 513,
-          },
+          // social: {
+          //   likeCount: 254,
+          //   sharedCount: 333,
+          //   viewCount: 513,
+          // },
           buttons: [
             {
-              title: 'Move to Homepage',
+              title: 'Go to Homepage',
               link: {
                 mobileWebUrl: copy_url,
                 webUrl: copy_url,
@@ -106,14 +105,14 @@ const LandingShare = () => {
       >
         <i className="fas fa-copy"></i>
         <input type="button" id="landing-share_copy" onClick={clipboardShare} />
-        <div className="name">copy</div>
+        <div className="name">Copy Link</div>
       </label>
       <div className="social-icon social-icon--kakaoTalk">
         <label htmlFor="landing-share_kakao">
           <i className="fas fa-comment"></i>
         </label>
         <input type="button" id="landing-share_kakao" onClick={kakaoShare} />
-        <div className="name">Kakao Talk</div>
+        <div className="name">KakaoTalk</div>
       </div>
     </div>
   );

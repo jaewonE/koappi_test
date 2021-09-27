@@ -25,7 +25,7 @@
   margin-bottom: 20px;
 }
 .landingSuccess-wrapper h3 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 700;
   width: 100%;
   text-align: center;
@@ -34,21 +34,30 @@
 .landingSuccess-wrapper p {
   font-size: 1.2rem;
   line-height: 1.3;
-  /* font-weight: 300; */
   width: 80%;
   text-align: center;
   margin-top: 10px;
 }
+.landingSuccess-wrapper input {
+  margin-top: 20px;
+  background-color: #785a9d;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 200px;
+  height: 50px;
+}
 .landingSuccess-wrapper .goback-btn {
   border: none;
-  /* width: 100%; */
   height: 50px;
   border-radius: 30px;
   background-color: #8064a2;
   opacity: 1;
   color: #fff;
   font-size: 1rem;
-  /* font-weight: 300; */
   display: flex;
   justify-content: center;
   align-items: center;

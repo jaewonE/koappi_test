@@ -21,7 +21,7 @@
     "build": "NODE_PATH=src react-scripts build",
     "test": "NODE_PATH=src react-scripts test",
     "eject": "NODE_PATH=src react-scripts eject",
-    "deploy": "firebase deploy",
+    "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
   "eslintConfig": {
@@ -42,5 +42,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://koappi-test-server.web.app/"
+  "homepage": "https://jaewonE.github.io/koappi_test/"
 }
